@@ -17,5 +17,5 @@ install_or_upgrade_cask "visual-studio-code"
 # todo: check if array is declared up front!
 # shellcheck disable=SC2154
 for ((i=0; i<${#macup_vscode_extensions[@]}; ++i)); do
-	code --install-extension "${macup_vscode_extensions[i]}"
+	code --install-extension "${macup_vscode_extensions[i]}" --force
 done
